@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="yes"/>
@@ -130,6 +130,31 @@ Reference: &lt;a href="https://www.onsemi.com/pub/Collateral/485AU.PDF"&gt;ON Se
 <wire x1="3" y1="3" x2="3" y2="-3" width="0.127" layer="51"/>
 <wire x1="3" y1="-3" x2="-3" y2="-3" width="0.127" layer="51"/>
 </package>
+<package name="SMA">
+<description>&lt;h2&gt;SMA&lt;/h2&gt;
+&lt;p&gt;CASE 403D ISSUE H&lt;p&gt;
+&lt;p&gt;Reference: &lt;a href="https://www.onsemi.com/pub/Collateral/SS16-D.PDF"&gt;SS16-D.PDF&lt;/a&gt; (page 4)&lt;/p&gt;</description>
+<smd name="C" x="-2" y="0" dx="2" dy="2" layer="1"/>
+<smd name="A" x="2" y="0" dx="2" dy="2" layer="1"/>
+<text x="-3.175" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.175" y="-1.905" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+<wire x1="-2.16" y1="1.3" x2="-2.16" y2="0.725" width="0.127" layer="51"/>
+<wire x1="-2.16" y1="0.725" x2="-2.16" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="-2.16" y1="-0.725" x2="-2.16" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="-2.16" y1="-1.3" x2="2.16" y2="-1.3" width="0.127" layer="51"/>
+<wire x1="2.16" y1="-1.3" x2="2.16" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="2.16" y1="-0.725" x2="2.16" y2="0.725" width="0.127" layer="51"/>
+<wire x1="2.16" y1="0.725" x2="2.16" y2="1.3" width="0.127" layer="51"/>
+<wire x1="2.16" y1="1.3" x2="-2.16" y2="1.3" width="0.127" layer="51"/>
+<wire x1="-2.16" y1="0.725" x2="-2.605" y2="0.725" width="0.127" layer="51"/>
+<wire x1="-2.605" y1="0.725" x2="-2.605" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="-2.605" y1="-0.725" x2="-2.16" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="2.16" y1="0.725" x2="2.605" y2="0.725" width="0.127" layer="51"/>
+<wire x1="2.605" y1="0.725" x2="2.605" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="2.605" y1="-0.725" x2="2.16" y2="-0.725" width="0.127" layer="51"/>
+<wire x1="-1.8" y1="-1.27" x2="-1.8" y2="1.27" width="0.2" layer="51"/>
+<wire x1="-0.635" y1="-0.75" x2="-0.635" y2="0.75" width="0.5" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NCN5121">
@@ -229,6 +254,34 @@ Transceiver for KNXTwisted Pair Networks</description>
 <wire x1="-22.86" y1="-20.32" x2="-22.86" y2="17.78" width="0.254" layer="94"/>
 <text x="-15.24" y="22.86" size="1.9304" layer="95" rot="R180">&gt;NAME</text>
 <text x="17.78" y="-25.4" size="1.9304" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="D">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="2.54" y="0.4826" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-2.3114" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="BD">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<text x="-1.27" y="2.3876" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.27" y="-4.2164" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<wire x1="1.27" y1="1.27" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<wire x1="1.27" y1="0" x2="3.81" y2="1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -340,6 +393,45 @@ Transceiver for KNXTwisted Pair Networks</description>
 <connect gate="IC1" pin="XSEL" pad="33"/>
 <connect gate="IC1" pin="XTAL1" pad="35"/>
 <connect gate="IC1" pin="XTAL2" pad="34"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SS16" prefix="D">
+<description>&lt;h2&gt;SS16 - Surface MountSchottky Power Rectifier&lt;/h2&gt;
+&lt;h3&gt;ON Semiconductor&lt;/h3&gt;
+&lt;p&gt;These devices employ the Schottky Barrier principle in a large areametal−to−silicon power  diode.  State  of  the  art  geometry  featuresepitaxial  construction  with  oxide  passivation  and  metal  overlaycontact. Ideally suited for low voltage, high frequency rectification, oras  free  wheeling  and  polarity  diodes  in  surface  mount  applicationswhere compact size and weight are critical to the system.&lt;/p&gt;</description>
+<gates>
+<gate name="D1" symbol="D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA">
+<connects>
+<connect gate="D1" pin="A" pad="A"/>
+<connect gate="D1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1SMA40CA" prefix="D">
+<description>&lt;h2&gt;1SMA40CA - TVS Diode&lt;/h2&gt;
+&lt;h3&gt;Littelfuse&lt;/h3&gt;
+&lt;p&gt;The SZ1SMA series is designed to protect voltage sensitive components from high voltage, high energy transients. They have excellent clamping capability, high surge capability, low zener impedance and fast response time. The SZ1SMA series is supplied in the Littelfuse exclusive, cost-effective, highly reliable package and is ideally suited for use in communication systems, automotive, numerical controls, process controls, medical equipment, business machines, power supplies and many other industrial and consumer applications.&lt;/p&gt;
+&lt;p&gt;Datasheet: &lt;a href="https://www.mouser.de/datasheet/2/240/littelfuse_tvs_diode_SZ1SMA_datasheet.pdf-1660955.pdf"&gt;littelfuse_tvs_diode_SZ1SMA_datasheet.pdf-1660955.pdf&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="D1" symbol="BD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMA">
+<connects>
+<connect gate="D1" pin="1" pad="A"/>
+<connect gate="D1" pin="2" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
