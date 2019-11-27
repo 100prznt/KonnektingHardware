@@ -160,52 +160,52 @@ Reference: &lt;a href="https://www.onsemi.com/pub/Collateral/485AU.PDF"&gt;ON Se
 <symbol name="NCN5121">
 <description>&lt;h2&gt;NCN5121&lt;/h2&gt;
 Transceiver for KNXTwisted Pair Networks</description>
-<pin name="CAV" x="-27.94" y="0" length="middle"/>
-<pin name="CCP" x="-27.94" y="2.54" length="middle"/>
-<pin name="TXO" x="-27.94" y="5.08" length="middle"/>
-<pin name="VBUS2" x="-27.94" y="7.62" length="middle"/>
-<pin name="VSSA" x="-27.94" y="10.16" length="middle"/>
-<pin name="VBUS1" x="-27.94" y="-2.54" length="middle"/>
-<pin name="CEQ1" x="-27.94" y="-5.08" length="middle"/>
-<pin name="CEQ2" x="-27.94" y="-7.62" length="middle"/>
-<pin name="VFILT" x="-27.94" y="-10.16" length="middle"/>
-<pin name="V20V" x="-27.94" y="-12.7" length="middle"/>
-<pin name="VDD2MV" x="-10.16" y="-25.4" length="middle" rot="R90"/>
-<pin name="VDD2MC" x="-7.62" y="-25.4" length="middle" rot="R90"/>
-<pin name="VDD2" x="-5.08" y="-25.4" length="middle" rot="R90"/>
-<pin name="VSS2" x="-2.54" y="-25.4" length="middle" rot="R90"/>
+<pin name="CAV" x="-27.94" y="2.54" length="middle"/>
+<pin name="CCP" x="-27.94" y="5.08" length="middle"/>
+<pin name="TXO" x="-27.94" y="7.62" length="middle"/>
+<pin name="VBUS2" x="-27.94" y="12.7" length="middle"/>
+<pin name="VSSA" x="15.24" y="27.94" length="middle" rot="R270"/>
+<pin name="VBUS1" x="-27.94" y="10.16" length="middle"/>
+<pin name="CEQ1" x="-27.94" y="0" length="middle"/>
+<pin name="CEQ2" x="-27.94" y="-2.54" length="middle"/>
+<pin name="VFILT" x="-27.94" y="-7.62" length="middle"/>
+<pin name="V20V" x="-27.94" y="-5.08" length="middle"/>
+<pin name="VDD2MV" x="-17.78" y="-25.4" length="middle" rot="R90"/>
+<pin name="VDD2MC" x="-15.24" y="-25.4" length="middle" rot="R90"/>
+<pin name="VDD2" x="-10.16" y="-25.4" length="middle" rot="R90"/>
+<pin name="VSS2" x="-5.08" y="-25.4" length="middle" rot="R90"/>
 <pin name="VSW2" x="0" y="-25.4" length="middle" rot="R90"/>
-<pin name="VIN" x="2.54" y="-25.4" length="middle" rot="R90"/>
-<pin name="VSW1" x="5.08" y="-25.4" length="middle" rot="R90"/>
-<pin name="VSS1" x="7.62" y="-25.4" length="middle" rot="R90"/>
-<pin name="VDD1" x="10.16" y="-25.4" length="middle" rot="R90"/>
-<pin name="VDD1M" x="12.7" y="-25.4" length="middle" rot="R90"/>
-<pin name="VDDA" x="-10.16" y="22.86" length="middle" rot="R270"/>
-<pin name="ANAOUT" x="-7.62" y="22.86" length="middle" rot="R270"/>
-<pin name="FANIN" x="-5.08" y="22.86" length="middle" rot="R270"/>
-<pin name="RESETB" x="-2.54" y="22.86" length="middle" rot="R270"/>
-<pin name="SAVEB" x="0" y="22.86" length="middle" rot="R270"/>
-<pin name="XTAL1" x="2.54" y="22.86" length="middle" rot="R270"/>
-<pin name="XTAL2" x="5.08" y="22.86" length="middle" rot="R270"/>
-<pin name="XSEL" x="7.62" y="22.86" length="middle" rot="R270"/>
-<pin name="XCLK" x="10.16" y="22.86" length="middle" rot="R270"/>
-<pin name="VSSD" x="12.7" y="22.86" length="middle" rot="R270"/>
-<pin name="VDDD" x="30.48" y="10.16" length="middle" rot="R180"/>
-<pin name="SCK/UC2" x="30.48" y="7.62" length="middle" rot="R180"/>
-<pin name="SDO/TXD" x="30.48" y="5.08" length="middle" rot="R180"/>
-<pin name="SDI/RXD" x="30.48" y="2.54" length="middle" rot="R180"/>
-<pin name="CSB/UC1" x="30.48" y="0" length="middle" rot="R180"/>
-<pin name="TREQ" x="30.48" y="-2.54" length="middle" rot="R180"/>
-<pin name="MODE2" x="30.48" y="-5.08" length="middle" rot="R180"/>
-<pin name="MODE1" x="30.48" y="-7.62" length="middle" rot="R180"/>
-<pin name="TRIG" x="30.48" y="-10.16" length="middle" rot="R180"/>
-<pin name="XCLKC" x="30.48" y="-12.7" length="middle" rot="R180"/>
-<wire x1="-22.86" y1="17.78" x2="25.4" y2="17.78" width="0.254" layer="94"/>
-<wire x1="25.4" y1="17.78" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
+<pin name="VIN" x="-20.32" y="-25.4" length="middle" rot="R90"/>
+<pin name="VSW1" x="7.62" y="-25.4" length="middle" rot="R90"/>
+<pin name="VSS1" x="12.7" y="-25.4" length="middle" rot="R90"/>
+<pin name="VDD1" x="17.78" y="-25.4" length="middle" rot="R90"/>
+<pin name="VDD1M" x="22.86" y="-25.4" length="middle" rot="R90"/>
+<pin name="VDDA" x="10.16" y="27.94" length="middle" rot="R270"/>
+<pin name="ANAOUT" x="30.48" y="12.7" length="middle" rot="R180"/>
+<pin name="FANIN" x="-15.24" y="27.94" length="middle" rot="R270"/>
+<pin name="RESETB" x="-12.7" y="27.94" length="middle" rot="R270"/>
+<pin name="SAVEB" x="-10.16" y="27.94" length="middle" rot="R270"/>
+<pin name="XTAL1" x="-7.62" y="27.94" length="middle" rot="R270"/>
+<pin name="XTAL2" x="-2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="XSEL" x="0" y="27.94" length="middle" rot="R270"/>
+<pin name="XCLK" x="2.54" y="27.94" length="middle" rot="R270"/>
+<pin name="VSSD" x="17.78" y="27.94" length="middle" rot="R270"/>
+<pin name="VDDD" x="12.7" y="27.94" length="middle" rot="R270"/>
+<pin name="SCK/UC2" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="SDO/TXD" x="30.48" y="7.62" length="middle" rot="R180"/>
+<pin name="SDI/RXD" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="CSB/UC1" x="30.48" y="2.54" length="middle" rot="R180"/>
+<pin name="TREQ" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="MODE2" x="30.48" y="-2.54" length="middle" rot="R180"/>
+<pin name="MODE1" x="30.48" y="-5.08" length="middle" rot="R180"/>
+<pin name="TRIG" x="30.48" y="-7.62" length="middle" rot="R180"/>
+<pin name="XCLKC" x="5.08" y="27.94" length="middle" rot="R270"/>
+<wire x1="-22.86" y1="22.86" x2="25.4" y2="22.86" width="0.254" layer="94"/>
+<wire x1="25.4" y1="22.86" x2="25.4" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="25.4" y1="-20.32" x2="-22.86" y2="-20.32" width="0.254" layer="94"/>
-<wire x1="-22.86" y1="-20.32" x2="-22.86" y2="17.78" width="0.254" layer="94"/>
-<text x="-15.24" y="22.86" size="1.9304" layer="95" rot="R180">&gt;NAME</text>
-<text x="17.78" y="-25.4" size="1.9304" layer="96">&gt;VALUE</text>
+<wire x1="-22.86" y1="-20.32" x2="-22.86" y2="22.86" width="0.254" layer="94"/>
+<text x="-17.78" y="27.94" size="1.9304" layer="95" rot="R180">&gt;NAME</text>
+<text x="0" y="-5.08" size="1.9304" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
 <symbol name="NCN5120">
 <description>&lt;h2&gt;NCN5120&lt;/h2&gt;
